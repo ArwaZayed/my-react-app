@@ -1,0 +1,184 @@
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { Badge } from "@/components/ui/badge"
+
+export default function AlEssalahMenu() {
+  return (
+    <div className="min-h-screen bg-background">
+      {/* Header */}
+      <div className="bg-card border-b border-border">
+        <div className="max-w-4xl mx-auto px-6 py-8 text-center">
+          <h1 className="text-4xl md:text-5xl font-bold text-primary mb-2">Al-Essalah</h1>
+          <p className="text-lg text-muted-foreground">Authentic Egyptian Cuisine</p>
+          <div className="mt-4 flex justify-center">
+            <div className="w-24 h-1 bg-accent rounded-full"></div>
+          </div>
+        </div>
+      </div>
+
+      {/* Menu Content */}
+      <div className="max-w-4xl mx-auto px-6 py-8">
+        <div className="grid gap-8">
+          {/* Signature Dishes */}
+          <Card className="border-accent/20">
+            <CardHeader>
+              <CardTitle className="text-2xl text-primary flex items-center gap-2">
+                Signature Dishes
+                <Badge variant="secondary" className="text-xs">
+                  Most Popular
+                </Badge>
+              </CardTitle>
+            </CardHeader>
+            <CardContent className="space-y-6">
+              <div className="flex justify-between items-start">
+                <div className="flex-1">
+                  <h3 className="text-xl font-semibold text-foreground mb-2">Koshari</h3>
+                  <p className="text-muted-foreground leading-relaxed">
+                    Egypt's national dish featuring a hearty mix of rice, lentils, pasta, and chickpeas, topped with
+                    crispy fried onions and served with spicy tomato sauce and garlic vinegar
+                  </p>
+                </div>
+                <span className="text-lg font-bold text-primary ml-4">$12.99</span>
+              </div>
+
+              <div className="flex justify-between items-start">
+                <div className="flex-1">
+                  <h3 className="text-xl font-semibold text-foreground mb-2">Ful Medames</h3>
+                  <p className="text-muted-foreground leading-relaxed">
+                    Traditional slow-cooked fava beans seasoned with cumin, garlic, and olive oil, served with fresh
+                    vegetables and warm pita bread
+                  </p>
+                </div>
+                <span className="text-lg font-bold text-primary ml-4">$9.99</span>
+              </div>
+            </CardContent>
+          </Card>
+
+          {/* Grilled Specialties */}
+          <Card>
+            <CardHeader>
+              <CardTitle className="text-2xl text-primary">Grilled Specialties</CardTitle>
+            </CardHeader>
+            <CardContent className="space-y-6">
+              <div className="flex justify-between items-start">
+                <div className="flex-1">
+                  <h3 className="text-xl font-semibold text-foreground mb-2">Kebda (Egyptian Liver)</h3>
+                  <p className="text-muted-foreground leading-relaxed">
+                    Tender beef liver sautéed with onions, bell peppers, and traditional Egyptian spices, served with
+                    tahini sauce and fresh bread
+                  </p>
+                </div>
+                <span className="text-lg font-bold text-primary ml-4">$14.99</span>
+              </div>
+
+              <div className="flex justify-between items-start">
+                <div className="flex-1">
+                  <h3 className="text-xl font-semibold text-foreground mb-2">Sogo' (Egyptian Sausages)</h3>
+                  <p className="text-muted-foreground leading-relaxed">
+                    Spiced beef sausages grilled to perfection with aromatic herbs and served with pickled vegetables
+                    and garlic sauce
+                  </p>
+                </div>
+                <span className="text-lg font-bold text-primary ml-4">$13.99</span>
+              </div>
+
+              <div className="flex justify-between items-start">
+                <div className="flex-1">
+                  <h3 className="text-xl font-semibold text-foreground mb-2">Hot Dogs Egyptian Style</h3>
+                  <p className="text-muted-foreground leading-relaxed">
+                    Grilled beef hot dogs seasoned with Middle Eastern spices, served in warm pita with tahini, pickles,
+                    and spicy harissa sauce
+                  </p>
+                </div>
+                <span className="text-lg font-bold text-primary ml-4">$11.99</span>
+              </div>
+            </CardContent>
+          </Card>
+
+          {/* Appetizers & Sides */}
+          <Card>
+            <CardHeader>
+              <CardTitle className="text-2xl text-primary">Appetizers & Sides</CardTitle>
+            </CardHeader>
+            <CardContent className="space-y-6">
+              <div className="flex justify-between items-start">
+                <div className="flex-1">
+                  <h3 className="text-xl font-semibold text-foreground mb-2">Baba Ganoush</h3>
+                  <p className="text-muted-foreground leading-relaxed">
+                    Smoky roasted eggplant dip blended with tahini, garlic, and lemon juice
+                  </p>
+                </div>
+                <span className="text-lg font-bold text-primary ml-4">$7.99</span>
+              </div>
+
+              <div className="flex justify-between items-start">
+                <div className="flex-1">
+                  <h3 className="text-xl font-semibold text-foreground mb-2">Hummus</h3>
+                  <p className="text-muted-foreground leading-relaxed">
+                    Creamy chickpea dip with tahini, olive oil, and traditional spices
+                  </p>
+                </div>
+                <span className="text-lg font-bold text-primary ml-4">$6.99</span>
+              </div>
+
+              <div className="flex justify-between items-start">
+                <div className="flex-1">
+                  <h3 className="text-xl font-semibold text-foreground mb-2">Egyptian Rice</h3>
+                  <p className="text-muted-foreground leading-relaxed">
+                    Fragrant basmati rice cooked with vermicelli and aromatic spices
+                  </p>
+                </div>
+                <span className="text-lg font-bold text-primary ml-4">$4.99</span>
+              </div>
+            </CardContent>
+          </Card>
+
+          {/* Beverages */}
+          <Card>
+            <CardHeader>
+              <CardTitle className="text-2xl text-primary">Traditional Beverages</CardTitle>
+            </CardHeader>
+            <CardContent className="space-y-6">
+              <div className="flex justify-between items-start">
+                <div className="flex-1">
+                  <h3 className="text-xl font-semibold text-foreground mb-2">Karkade (Hibiscus Tea)</h3>
+                  <p className="text-muted-foreground leading-relaxed">
+                    Refreshing hibiscus flower tea served hot or cold
+                  </p>
+                </div>
+                <span className="text-lg font-bold text-primary ml-4">$3.99</span>
+              </div>
+
+              <div className="flex justify-between items-start">
+                <div className="flex-1">
+                  <h3 className="text-xl font-semibold text-foreground mb-2">Egyptian Tea</h3>
+                  <p className="text-muted-foreground leading-relaxed">
+                    Strong black tea sweetened with sugar, served in traditional glasses
+                  </p>
+                </div>
+                <span className="text-lg font-bold text-primary ml-4">$2.99</span>
+              </div>
+
+              <div className="flex justify-between items-start">
+                <div className="flex-1">
+                  <h3 className="text-xl font-semibold text-foreground mb-2">Fresh Mango Juice</h3>
+                  <p className="text-muted-foreground leading-relaxed">
+                    Freshly squeezed mango juice, a perfect complement to spicy dishes
+                  </p>
+                </div>
+                <span className="text-lg font-bold text-primary ml-4">$4.99</span>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+
+        {/* Footer */}
+        <div className="mt-12 text-center py-8 border-t border-border">
+          <p className="text-muted-foreground mb-2">
+            All dishes are prepared with authentic Egyptian spices and traditional cooking methods
+          </p>
+          <p className="text-sm text-muted-foreground">Please inform us of any dietary restrictions or allergies</p>
+        </div>
+      </div>
+    </div>
+  )
+}
